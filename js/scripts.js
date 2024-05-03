@@ -76,3 +76,16 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 });
+
+$(document).ready(function(){
+    $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000, // Change slide every 3 seconds
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+});
