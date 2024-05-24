@@ -137,10 +137,103 @@ hr {
 
 .developer-img {
   width: 100%;
-  max-width: 150px;
-  height: auto;
-  max-height: 150px;
+  height: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card {
+  overflow: hidden;
+  border: none;
+  max-width: 300px;
   margin: 0 auto;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.developer-section .card-body {
+  background-color: #000000 !important; /* Change this to the desired color */
+}
+
+/* Target the StarVision logo */
+#about img.img-fluid {
+  max-width: 50%;
+}
+
+#about img.img-fluid + p {
+  font-size: 15px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .why-starvision-section .featured-text,
+  .why-starvision-section .text-box {
+    padding: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .why-starvision-section .featured-text,
+  .why-starvision-section .text-box {
+    padding: 15px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .why-starvision-section .featured-text,
+  .why-starvision-section .text-box {
+    padding: 20px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .why-starvision-section .featured-text,
+  .why-starvision-section .text-box {
+    padding: 25px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .why-starvision-section .featured-text,
+  .why-starvision-section .text-box {
+    padding: 30px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  word-wrap: break-word;
+}
+
+/* Background for the Why StarVision section */
+.why-starvision-section {
+  background-image: url('assets/img/stars.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Ensure text and other content remains readable */
+.why-starvision-section .featured-text, 
+.why-starvision-section .text-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.col-lg-8 p {
+  width: 100%;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
