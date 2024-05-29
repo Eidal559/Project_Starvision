@@ -13,7 +13,7 @@
   --bs-black: #000;
   --bs-white: #000000;
   --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
+  --bs-gray-dark: #757779;
   --bs-gray-100: #080808;
   --bs-gray-200: #030303;
   --bs-gray-300: #020202;
@@ -30,9 +30,9 @@
   --bs-warning: #e4c662;
   --bs-danger: #a16468;
   --bs-light: #000000;
-  --bs-dark: #212529;
+  --bs-dark: #475058;
   --bs-black: #000;
-  --bs-white: #ffffff;
+  --bs-white: #050505;
   --bs-primary-rgb: 100, 161, 157;
   --bs-secondary-rgb: 116, 100, 161;
   --bs-success-rgb: 103, 194, 156;
@@ -54,7 +54,7 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #5baf7cde;
   --bs-body-bg: #050505;
   --bs-border-width: 1px;
   --bs-border-style: solid;
@@ -145,14 +145,22 @@ hr {
 .card {
   overflow: hidden;
   border: none;
-  max-width: 300px;
+  max-width: 250px;
   margin: 0 auto;
 }
 
 .card-title {
   margin-top: 10px;
   font-size: 1.25rem;
-  color: #ffffff;
+  color: #f8f8f8;
+}
+
+.card-title a {
+  text-decoration: none; /* Remove default underline */
+}
+
+.card-title a:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
 
 .developer-section .card-body {
@@ -215,25 +223,6 @@ img {
 
 h1, h2, h3, h4, h5, h6, p {
   word-wrap: break-word;
-}
-
-/* Background for the Why StarVision section */
-.why-starvision-section {
-  background-image: url('assets/img/stars.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-/* Ensure text and other content remains readable */
-.why-starvision-section .featured-text, 
-.why-starvision-section .text-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.col-lg-8 p {
-  width: 100%;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
